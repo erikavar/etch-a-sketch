@@ -1,0 +1,54 @@
+html {
+    background-color: #1f1e1e;
+}
+
+:root {
+    --grid-columns: 1;
+    --grid-rows: 1;
+    --border: 1px solid rgb(200, 200, 200);
+    --color: rgb(200, 200, 200);
+}
+
+body {
+    text-align: center;
+}
+
+.container {
+    display: grid;
+    grid-template-columns: repeat(var(--grid-columns), auto);
+    grid-template-rows: repeat(var(--grid-rows), auto);
+    border: var(--border);
+    width: 450px;
+    height: 450px;
+    margin: auto;
+}
+
+.newSquare {
+    border: var(--border);
+}
+
+.touchedSquare {
+    background-color: var(--color);
+}
+
+h1, p {
+    color: var(--color);
+    font-family: Arial, Helvetica, sans-serif;
+}
+
+h1 {
+    padding-top: 30px;
+}
+
+button {
+    color: white;
+    font-family: Arial, Helvetica, sans-serif;
+    font-size: 16px;
+    font-weight: bold;
+    background-color: #af4c7a;
+    border: none;
+    border-radius: 15px;
+    height: 50px;
+    width: 150px;
+    margin: 10px;
+}
